@@ -4,7 +4,8 @@
 Console.WriteLine ("Введите 5-ти значное число: ");
 string number = Console.ReadLine();
 int len = number.Length;
-
+void Polindrom (string num){
+    int count = 0;
 if (len == 5)
 {
     if (number[0] == number[4] && number [1] == number[3])
@@ -21,3 +22,6 @@ else
 {
     Console.WriteLine ("Вы ввели не 5-и значное число");
 }
+}
+Polindrom(number);
+
