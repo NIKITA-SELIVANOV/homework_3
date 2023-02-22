@@ -2,16 +2,23 @@
 Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 3 -> 1, 8, 27; 5 -> 1, 8, 27, 64, 125  */
 
-int number = ReadInt("Введите число: ");
+Console.WriteLine("Введите натуральное число:");
+int number = Convert.ToInt32(Console.ReadLine());
+if (number < 1){
 
-for (int i = 1; i <= number; i++)
+ Console.WriteLine("Некорректный ввод");
+ return;
+}
+else Degree (number);
+
+
+void Degree (int num)
 {
-    Console.Write($"{i * i * i}, ");
+int count = 1;
+while (count <= num)
+{
+Console.WriteLine($"{count} {count * count*count}");
+count++;
 }
 
-// Метод
-int ReadInt(string message)
-{
-    Console.Write(message);
-    return Convert.ToInt32(Console.ReadLine());
 }

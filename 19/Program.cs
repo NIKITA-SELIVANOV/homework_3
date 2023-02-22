@@ -19,5 +19,5 @@ if (len == 5)
 }
 else
 {
-    Console.WriteLine ("Вы ввели НЕ 5-и значное число");
+    Console.WriteLine ("Вы ввели не 5-и значное число");
 }
